@@ -1,0 +1,19 @@
+syntax = "proto3";
+package Hotfix;
+
+message C2S_Login // IRequest
+{
+	string puid = 1;	// 平台uid
+	string deviceId = 2;
+	string platform = 3;
+	string version = 4;
+	string token = 5;
+}
+
+message S2C_Login // IResponse
+{
+	int32 playerId = 1;
+	int32 roleItemId = 2;
+	int32 timeStamp = 3;
+	int32 status = 4;
+}
